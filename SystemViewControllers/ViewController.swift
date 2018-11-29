@@ -18,7 +18,20 @@ class ViewController: UIViewController {
     }
     
     
-
-
+    @IBAction func shareButtonTapped(_ sender: UIButton) {
+        
+    }
+    
+    @IBAction func safariButtonTapped(_ sender: UIButton) {
+        
+    }
+    
+    @IBAction func photosButtonTapped(_ sender: UIButton) {
+        
+    }
+    
+    @IBAction func emailButtonTapped(_ sender: UIButton) {
+        
+    }
 }
 
