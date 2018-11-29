@@ -29,18 +29,30 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jfc-uh-r9b">
                                         <rect key="frame" x="0.0" y="0.0" width="40" height="30"/>
                                         <state key="normal" title="Share"/>
+                                        <connections>
+                                            <action selector="shareButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Pkb-kQ-vDQ"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PPr-N5-11R">
                                         <rect key="frame" x="91" y="0.0" width="40" height="30"/>
                                         <state key="normal" title="Safari"/>
+                                        <connections>
+                                            <action selector="safariButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uyo-kA-lcy"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7lj-XQ-bU2">
                                         <rect key="frame" x="182" y="0.0" width="54" height="30"/>
                                         <state key="normal" title="Camera"/>
+                                        <connections>
+                                            <action selector="photosButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NPy-jU-yQu"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RbZ-Yb-aIJ">
                                         <rect key="frame" x="287" y="0.0" width="37" height="30"/>
                                         <state key="normal" title="Email"/>
+                                        <connections>
+                                            <action selector="emailButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lFR-LZ-ete"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>

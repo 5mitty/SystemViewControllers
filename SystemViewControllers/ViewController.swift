@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SafariServices
 
 class ViewController: UIViewController {
 
@@ -19,11 +20,18 @@ class ViewController: UIViewController {
     
     
     @IBAction func shareButtonTapped(_ sender: UIButton) {
+        guard let image = imageView.image else { return }
+        let activityController = UIActivityViewController(activityItems: [image], applicationActivities: nil)
+        activityController.popoverPresentationController?.sourceView = sender
         
+        present(activityController,animated: true, completion: nil)
     }
     
     @IBAction func safariButtonTapped(_ sender: UIButton) {
-        
+        if let url = URL(string: "https://www.google.com") {
+            let safariViewController = SFSafariViewController(url: url)
+            present(safariViewController, animated: true, completion: nil)
+        }
     }
     
     @IBAction func photosButtonTapped(_ sender: UIButton) {
